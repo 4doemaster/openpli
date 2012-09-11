@@ -90,7 +90,8 @@ PR = "r36"
 
 ENIGMA2_BRANCH ?= "master"
 #SRC_URI = "git://github.com/4doe/enigma2.git;protocol=git;branch=${ENIGMA2_BRANCH}"
-SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/enigma2;protocol=git;branch=${ENIGMA2_BRANCH}"
+SRC_URI = "git://github.com/4doemaster/enigma2.git;protocol=git;branch=${ENIGMA2_BRANCH}"
+#SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/enigma2;protocol=git;branch=${ENIGMA2_BRANCH}"
 
 #@ NOTE : custom model added section
 #@ 20120830
