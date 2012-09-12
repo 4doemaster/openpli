@@ -9,6 +9,8 @@ PV = "${KV}"
 SRCDATE = "20120820"
 
 RDEPENDS = "kernel (${KV})" 
+RDEPENDS += "technomate-bootloader"
+RDEPENDS += "technomate-logo"
 MACHINE_KERNEL_PR_append = ".${SRCDATE}.0"
 
 TECHNOMATE_KERNEL_GCC = "4.4.3"

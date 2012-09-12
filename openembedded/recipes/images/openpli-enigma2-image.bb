@@ -76,6 +76,7 @@ ENIGMA2_OPTIONAL = " \
 				softcams-enigma2-meta \
 				dvbsnoop \
 				mtd-utils \
+				directfb \
 				dvdfs \
 				minidlna \
 				nano \

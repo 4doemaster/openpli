@@ -37,7 +37,8 @@ OPTIONAL_PACKAGES += " \
 			wakelan \
 			inadyn-mt \
 			cups \
-			vim joe \
+			vim \
+			joe \
 			mc \
 			libdca \
 			dvd+rw-tools dvdauthor cdrkit \
@@ -48,6 +49,7 @@ OPTIONAL_PACKAGES += " \
 			mpd \
 			parted \
 			dosfstools \
+			directfb \
 			"
 
 export IMAGE_BASENAME = "openpli"
