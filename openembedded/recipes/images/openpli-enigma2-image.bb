@@ -29,6 +29,7 @@ ENIGMA2_PLUGINS = " \
 				enigma2-plugin-extensions-webinterface \
 				enigma2-plugin-extensions-audiosync \
 				enigma2-plugin-extensions-ppanel \
+				enigma2-plugin-extensions-mytube \
 				enigma2-plugin-systemplugins-softwaremanager \
 				enigma2-plugin-systemplugins-positionersetup \
 				enigma2-plugin-extensions-cutlisteditor \
