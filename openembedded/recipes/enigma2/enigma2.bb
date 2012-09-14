@@ -97,10 +97,6 @@ SRC_URI = "git://github.com/4doemaster/enigma2.git;protocol=git;branch=${ENIGMA2
 #@ 20120830
 
 SRC_URI_append_tmtwin = " \
- 						file://arrowdown.png \
-						file://arrowleft.png \
-						file://arrowright.png \
-						file://arrowup.png \
 						file://keymap.xml \
 						file://rcold.png \
 						file://rc.png \
@@ -111,10 +107,6 @@ SRC_URI_append_tmtwin = " \
 						file://input_rcold.png \
 						 "
 SRC_URI_append_tm2toe= " \
- 						file://arrowdown.png \
-						file://arrowleft.png \
-						file://arrowright.png \
-						file://arrowup.png \
 						file://keymap.xml \
 						file://rcold.png \
 						file://rc.png \
@@ -126,10 +118,6 @@ SRC_URI_append_tm2toe= " \
 						 "
 
 SRC_URI_append_ios200= " \
- 						file://arrowdown.png \
-						file://arrowleft.png \
-						file://arrowright.png \
-						file://arrowup.png \
 						file://keymap.xml \
 						file://rcold.png \
 						file://rc.png \
@@ -236,10 +224,6 @@ do_install_append() {
 do_install_append_tmtwin(){
 	install -m 0644 ${WORKDIR}/rc.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/rcold.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowdown.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowup.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowright.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowleft.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/keymap.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/rcpositions.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/input_rcnew-configured.png ${D}/usr/share/enigma2/skin_default/icons/
@@ -251,10 +235,6 @@ do_install_append_tmtwin(){
 do_install_append_tm2toe(){
 	install -m 0644 ${WORKDIR}/rc.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/rcold.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowdown.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowup.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowright.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowleft.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/keymap.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/rcpositions.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/input_rcnew-configured.png ${D}/usr/share/enigma2/skin_default/icons/
@@ -266,10 +246,6 @@ do_install_append_tm2toe(){
 do_install_append_ios200(){
 	install -m 0644 ${WORKDIR}/rc.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/rcold.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowdown.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowup.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowright.png ${D}/usr/share/enigma2/skin_default/
-	install -m 0644 ${WORKDIR}/arrowleft.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/keymap.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/rcpositions.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/input_rcnew-configured.png ${D}/usr/share/enigma2/skin_default/icons/
