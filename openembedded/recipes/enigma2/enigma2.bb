@@ -105,6 +105,10 @@ SRC_URI_append_tmtwin = " \
 						file://rcold.png \
 						file://rc.png \
 						file://rcpositions.xml \
+						file://input_rcnew-configured.png \
+						file://input_rcnew.png \
+						file://input_rcold-configured.png \
+						file://input_rcold.png \
 						 "
 
 S = "${WORKDIR}/git"
@@ -195,8 +199,9 @@ do_install_append() {
 #	zip -m -r -9 enigma.zip *.pyo Screens/*.pyo Tools/*.pyo Components/*.pyo Components/*/*.pyo
 #}
 
-# NOTE : tmtwin model default picture, key and rcposition
-# 20120830
+#@ NOTE : tmtwin model default picture, key and rcposition
+#@ 20120830
+#@ 20120914		: input device rcu picture added.
 
 do_install_append_tmtwin(){
 	install -m 0644 ${WORKDIR}/rc.png ${D}/usr/share/enigma2/skin_default/
@@ -207,6 +212,10 @@ do_install_append_tmtwin(){
 	install -m 0644 ${WORKDIR}/arrowleft.png ${D}/usr/share/enigma2/skin_default/
 	install -m 0644 ${WORKDIR}/keymap.xml ${D}/usr/share/enigma2/
 	install -m 0644 ${WORKDIR}/rcpositions.xml ${D}/usr/share/enigma2/
+	install -m 0644 ${WORKDIR}/input_rcnew-configured.png ${D}/usr/share/enigma2/skin_default/icons/
+	install -m 0644 ${WORKDIR}/input_rcnew.png ${D}/usr/share/enigma2/skin_default/icons/
+	install -m 0644 ${WORKDIR}/input_rcold.png ${D}/usr/share/enigma2/skin_default/icons/
+	install -m 0644 ${WORKDIR}/input_reold-configured.png ${D}/usr/share/enigma2/skin_default/icons/
 }
 
 python populate_packages_prepend () {
